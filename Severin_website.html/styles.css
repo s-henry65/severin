@@ -1,0 +1,169 @@
+/* =================================
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+	margin: 0;
+
+	color: #3a3a3a;
+
+	font-family: 'Varela Round', sans-serif;
+	line-height: 1.6;
+}
+
+h2 {
+	font-size: 1.25em;
+}
+h3 {
+	font-size: .75em;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+p {
+	margin-bottom: 1.8em;
+
+	font-size: .95em;
+}
+a {
+	text-decoration: none;
+
+	color: #0a0a0a;
+}
+img {
+	max-width: 100%;
+}
+
+/* =================================
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+	margin: 0;
+
+	color: #0a0a0a;
+
+	font-size: 2em;
+}
+.name a:hover {
+	color: #3acec2;
+}
+.main-nav {
+	margin-top: 15px;
+}
+.main-header,
+.main-footer {
+	display: block;
+
+	text-align: center;
+
+}
+.main-nav a {
+	padding: 10px 15px;
+
+	text-transform: uppercase;
+
+	color: #3acec2;
+
+	font-size: 1.25em;
+}
+
+.main-nav a:hover {
+	color: #0a0a0a;
+}
+.img {
+	padding: 20px;
+}
+.inner-footer a {
+	padding: 10px 15px;
+
+	text-transform: uppercase;
+
+	color: #0a0a0a;
+
+	font-size: .85em;
+}
+.main-footer a:hover {
+	color: #3acec2;
+}
+
+/* ---- Layout Containers ---- */
+.banner {
+	text-align: center;
+}
+.main-header {
+	padding-top: .35em;
+	padding-bottom: .35em;
+}
+.banner {
+	margin-bottom: 25px;
+	padding: .25em;
+
+	color: #0a0a0a;
+	background: #f0f0f0;
+}
+.container {
+  display: flex;
+	justify-content: center;
+}
+
+.main-footer {
+	margin-top: 25px;
+	padding: .5em;
+
+	background: #f0f0f0;
+}
+
+
+/* =================================
+  Media Queries
+==================================== */
+@media (min-width: 769px) {
+	.main-header {
+		width: 90%;
+		margin: 0 auto;
+	}
+}
+
+@media (min-width: 769px) {
+
+	.main-header,
+	.main-nav,
+	.main-footer,
+	.inner-footer {
+		display: flex;
+	}
+
+	.main-header,
+	.main-footer {
+		align-items: center;
+		flex-direction: column;
+	}
+
+}
+@media (min-width: 1025px) {
+	.main-header {
+		width: 80%;
+		max-width: 1150px;
+	}
+}
+@media (min-width: 1025px) {
+	.main-header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.inner-footer {
+		flex-direction: row;
+		justify-content: center;
+	}
+}
